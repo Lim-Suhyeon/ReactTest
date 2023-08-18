@@ -10,17 +10,18 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
-function ComAccordion({ customClass }) {
+function ComAccordion({ customClass, dataText }) {
   return (
     <Accordion
       className={customClass}
-      allowMultipleExpanded={true}
+      allowMultipleExpanded={false}
       allowZeroExpanded={true}
     >
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>
             What harsh truths do you prefer to ignore?
+            {dataText}
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>

@@ -14,7 +14,7 @@ export default function App() {
     <div className="App">
       <GlobalStyle />
       <TodoHead />
-      <ComAccordion customClass="acc_test" />
+      <ComAccordion customClass="acc_test" dataText="text0001" />
     </div>
   );
 }

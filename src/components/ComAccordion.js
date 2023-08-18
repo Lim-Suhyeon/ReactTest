@@ -1,4 +1,5 @@
 import React from "react";
+// Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
 
 import {
@@ -9,12 +10,13 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
-// Demo styles, see 'Styles' section below for some notes on use.
-import "react-accessible-accordion/dist/fancy-example.css";
-
 function ComAccordion({ customClass }) {
   return (
-    <Accordion className={customClass}>
+    <Accordion
+      className={customClass}
+      allowMultipleExpanded={true}
+      allowZeroExpanded={true}
+    >
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>

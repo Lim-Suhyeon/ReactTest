@@ -10,6 +10,13 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
+const scrollToTop = () => {
+  setTimeout(function () {
+    alert("test");
+    window.scrollTo({ top: 500, left: 0, behavior: "smooth" });
+  }, 500);
+};
+
 function ComAccordion({ customClass, dataText }) {
   return (
     <Accordion
@@ -20,15 +27,36 @@ function ComAccordion({ customClass, dataText }) {
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>
-            What harsh truths do you prefer to ignore?
-            {dataText}
+            <div onClick={scrollToTop}>
+              What harsh truths do you prefer to ignore?
+              {dataText}
+            </div>
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
           <p>
             Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
             occaecat ut occaecat consequat est minim minim esse tempor laborum
-            consequat esse adipisicing eu reprehenderit enim.
+            consequat esse adipisicing eu reprehenderit enim. Exercitation in
+            fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat
+            consequat est minim minim esse tempor laborum consequat esse
+            adipisicing eu reprehenderit enim. Exercitation in fugiat est ut ad
+            ea cupidatat ut in cupidatat occaecat ut occaecat consequat est
+            minim minim esse tempor laborum consequat esse adipisicing eu
+            reprehenderit enim. Exercitation in fugiat est ut ad ea cupidatat ut
+            in cupidatat occaecat ut occaecat consequat est minim minim esse
+            tempor laborum consequat esse adipisicing eu reprehenderit enim.
+            Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
+            occaecat ut occaecat consequat est minim minim esse tempor laborum
+            consequat esse adipisicing eu reprehenderit enim. Exercitation in
+            fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat
+            consequat est minim minim esse tempor laborum consequat esse
+            adipisicing eu reprehenderit enim. Exercitation in fugiat est ut ad
+            ea cupidatat ut in cupidatat occaecat ut occaecat consequat est
+            minim minim esse tempor laborum consequat esse adipisicing eu
+            reprehenderit enim. Exercitation in fugiat est ut ad ea cupidatat ut
+            in cupidatat occaecat ut occaecat consequat est minim minim esse
+            tempor laborum consequat esse adipisicing eu reprehenderit enim.
           </p>
         </AccordionItemPanel>
       </AccordionItem>

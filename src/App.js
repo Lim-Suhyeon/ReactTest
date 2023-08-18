@@ -1,6 +1,7 @@
 import "./styles.css";
 import { createGlobalStyle } from "styled-components";
 import TodoHead from "./components/TodoHead";
+import ComAccordion from "./components/ComAccordion";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -13,6 +14,7 @@ export default function App() {
     <div className="App">
       <GlobalStyle />
       <TodoHead />
+      <ComAccordion />
     </div>
   );
 }

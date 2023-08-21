@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <TodoHead />
+      <TodoHead init="today" />
     </div>
   );
 }

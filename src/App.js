@@ -1,6 +1,6 @@
 import "./styles.css";
 import { createGlobalStyle } from "styled-components";
-import TodoHead from "./components/TodoHead";
+import TodoHead from "./layout/TopHeader";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
 export default function App() {
   return (
     <div className="App">
-      <GlobalStyle />
-      <TodoHead title="테스트" />
+      {/* <GlobalStyle /> */}
+      <TodoHead title="Guide" />
     </div>
   );
 }

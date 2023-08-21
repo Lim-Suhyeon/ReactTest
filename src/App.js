@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <TodoHead />
+      <TodoHead title="테스트 중입니다." />
     </div>
   );
 }

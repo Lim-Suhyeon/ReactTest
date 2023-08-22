@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import InputGude from "./InputGude";
@@ -8,12 +8,11 @@ import InputGude from "./InputGude";
 function TestPage(props) {
   return (
     <BrowserRouter>
-      testPage
+      Routes
       <Routes>
-        testPage
-        <Route path="./InputGude" exact render={() => <InputGude />} />
+        <Route path="/InputGude" element={<InputGude />} />
       </Routes>
-    </BrowserRouter> 
+    </BrowserRouter>
   );
 }
 

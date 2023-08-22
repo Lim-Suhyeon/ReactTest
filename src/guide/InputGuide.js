@@ -1,7 +1,7 @@
 import React from "react";
 
-function InputGude(props) {
+function InputGuide(props) {
   return <div>InputPage</div>;
 }
 
-export default InputGude;
+export default InputGuide;

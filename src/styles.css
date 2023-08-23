@@ -25,10 +25,11 @@ body {
   border: none;
 }
 .btn_del {
+  display: none;
   position: absolute;
   right: 5px;
   top: 5px;
 }
 .btn_del.active {
-  display: none;
+  display: block;
 }

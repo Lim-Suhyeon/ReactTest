@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 
 function Input(props) {
   //btn_del show
+  const [isDelbtn, setActive] = useState(false);
   useEffect(() => {
     console.log("컴포넌트가 화면에 나타남");
     return () => {
       console.log("컴포넌트가 화면에서 사라짐");
     };
   }, []);
-  const [isDelbtn, setActive] = useState(false);
-
+  const init = () => {
+    alert();
+  };
   const onChange = (e) => {
     const $value = e.target.value.length;
     if ($value > 0) {
@@ -18,6 +20,7 @@ function Input(props) {
       setActive(false);
     }
   };
+
   return (
     <div className="inp_wrap">
       <div className="inp_box">

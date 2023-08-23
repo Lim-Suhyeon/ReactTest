@@ -1,4 +1,14 @@
+body {
+  margin: 0;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+.guide_cont {
+  margin: 20px;
+}
+.guide_h2 {
+  margin: 20px 0;
+  text-align: left;
 }

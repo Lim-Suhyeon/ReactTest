@@ -2,10 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const HeadBlock = styled.div`
-  padding-top: 48px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
+  padding: 20px;
   border-bottom: 1px solid #e9ecef;
   h1 {
     margin: 0;
@@ -17,9 +14,9 @@ const HeadBlock = styled.div`
 function TopHeader(props) {
   return (
     <HeadBlock>
-      <a href="#none" class="btn_back">
+      {/*<a href="#none" class="btn_back">
         뒤로가기
-      </a>
+  </a>*/}
       <h1>{props.title}</h1>
     </HeadBlock>
   );

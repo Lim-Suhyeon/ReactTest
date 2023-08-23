@@ -3,6 +3,11 @@ import React, { useState, useEffect } from "react";
 function Input(props) {
   //btn_del show
   const [isDelbtn, setActive] = useState(false);
+  useEffect(() => {
+    if (props.defaultValue != undefined) {
+      console.log(props.defaultValue);
+    }
+  });
   const onChange = (e) => {
     const $value = e.target.value.length;
     if ($value > 0) {
@@ -21,12 +26,7 @@ function Input(props) {
           type={props.type}
           onChange={onChange}
         />
-        <button
-          className={`btn_del ${isDelbtn ? "active" : ""}
-         ${props.isDelbtn ? "active" : ""}`}
-        >
-          삭제
-        </button>
+        <button className={`btn_del ${isDelbtn ? "active" : ""}`}>삭제</button>
       </div>
     </div>
   );

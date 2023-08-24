@@ -52,6 +52,7 @@ function Input(props) {
           </button>
         )}
       </div>
+      <div>{props.val}</div>
       <p className="value">값 : {value}</p>
     </div>
   );

@@ -17,6 +17,9 @@ body {
   text-align: left;
   font-weight: bold;
 }
+.red {
+  color: red;
+}
 
 /* input */
 .inp_box {

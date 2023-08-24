@@ -17,7 +17,6 @@ function Input(props) {
     const $value = e.target.value.length;
     if ($value > 0) {
       setActive(true);
-      console.log(value);
     } else {
       setActive(false);
     }

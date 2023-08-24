@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function Input(props) {
   //btn_del show
   const [isDelbtn, setActive] = useState(false);
+  const [value, setValue] = useState(props.defaultValue);
 
   //화면 진입시
   useEffect(() => {
@@ -16,19 +17,23 @@ function Input(props) {
     const $value = e.target.value.length;
     if ($value > 0) {
       setActive(true);
+      setValue(e.target.value);
+      console.log(value);
     } else {
-      setActive(false);
+      setActive({ defaultValue: "" });
     }
   };
 
   //reset button
-  const onReset = (e) => {};
+  const onReset = (e) => {
+    setValue("");
+  };
 
   return (
     <div className="inp_wrap">
       <div className="inp_box">
         <input
-          defaultValue={props.defaultValue}
+          value={value}
           placeholder={props.placeholder}
           type={props.type}
           onChange={onChange}
@@ -42,6 +47,7 @@ function Input(props) {
           </button>
         )}
       </div>
+      <b>값 : {value}</b>
     </div>
   );
 }

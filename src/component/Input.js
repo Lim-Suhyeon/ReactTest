@@ -47,7 +47,7 @@ function Input(props) {
           </button>
         )}
       </div>
-      <b>값 : {value}</b>
+      <p className="value">값 : {value}</p>
     </div>
   );
 }

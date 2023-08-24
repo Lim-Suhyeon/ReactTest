@@ -17,16 +17,16 @@ function Input(props) {
     const $value = e.target.value.length;
     if ($value > 0) {
       setActive(true);
-      setValue(e.target.value);
-      console.log(value);
     } else {
-      setActive({ defaultValue: "" });
+      setActive(false);
     }
+    setValue(e.target.value);
   };
 
   //reset button
   const onReset = (e) => {
     setValue("");
+    setActive(false);
   };
 
   return (

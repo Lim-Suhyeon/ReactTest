@@ -12,6 +12,11 @@ body {
   margin: 20px 0;
   text-align: left;
 }
+.value {
+  margin: 5px 0 15px;
+  text-align: left;
+  font-weight: bold;
+}
 
 /* input */
 .inp_box {

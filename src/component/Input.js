@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Input(props) {
   //btn_del show
@@ -24,10 +24,14 @@ function Input(props) {
   };
 
   //reset button
-  const onReset = (e) => {
+  const onReset = () => {
     setValue("");
     setActive(false);
+    nameInput.current.focus();
   };
+
+  //focus
+  const nameInput = useRef();
 
   return (
     <div className="inp_wrap">
@@ -37,6 +41,7 @@ function Input(props) {
           placeholder={props.placeholder}
           type={props.type}
           onChange={onChange}
+          ref={nameInput}
         />
         {isDelbtn && (
           <button

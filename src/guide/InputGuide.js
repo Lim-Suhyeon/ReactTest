@@ -5,7 +5,7 @@ function InputGuide() {
   return (
     <div className="guide_cont">
       <h2 className="guide_h2">Input</h2>
-      <Input placeholder="내용   을 입력해주세요" type="password" />
+      <Input placeholder="내용을 입력해주세요" type="password" />
       <Input
         placeholder="내용을 입력해주세요"
         defaultValue="0001"

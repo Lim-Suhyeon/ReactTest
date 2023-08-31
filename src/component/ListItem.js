@@ -4,7 +4,7 @@ function ListItem(props) {
   return (
     <>
       <li>
-        {props.name}, {props.age}
+        {props.name}, {props.date}
       </li>
     </>
   );

@@ -8,9 +8,9 @@ function List(props) {
   ));
 
   return (
-    <div className="guide_cont">
-      <ul>{nameList}</ul>
-    </div>
+    <>
+      <ul className="list_bul">{nameList}</ul>
+    </>
   );
 }
 

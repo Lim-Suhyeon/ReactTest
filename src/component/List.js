@@ -2,21 +2,14 @@ import React from "react";
 import ListItem from "./ListItem";
 
 function List(props) {
-  const names = [
-    {
-      title: "1",
-      text: "1내용",
-    },
-    {
-      title: "2",
-      text: "2내용",
-    },
-  ];
+  const names = props.dataList;
+  const nameList = names.map((data) => (
+    <ListItem name={data.name} age={data.age} />
+  ));
+
   return (
     <div className="guide_cont">
-      <ul>
-        <ListItem title={names.title} />
-      </ul>
+      <ul>{nameList}</ul>
     </div>
   );
 }

@@ -3,9 +3,9 @@ import List from "../component/List";
 
 function ListGuide() {
   const dataList = [
-    { name: "김철수", age: "20" },
-    { name: "김영희", age: "21" },
-    { name: "매머드", age: "22" },
+    { name: "김철수", date: "23.01.01", label: "" },
+    { name: "김영희", date: "23.01.01", label: "" },
+    { name: "매머드", date: "23.01.01", label: "" },
   ];
 
   return (

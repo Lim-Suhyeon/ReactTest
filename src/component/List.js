@@ -3,13 +3,13 @@ import ListItem from "./ListItem";
 
 function List(props) {
   const names = props.dataList;
-  const nameList = names.map((data) => (
-    <ListItem name={data.name} age={data.age} />
+  const dataLists = names.map((data) => (
+    <ListItem name={data.name} date={data.date} />
   ));
 
   return (
     <>
-      <ul className="list_bul">{nameList}</ul>
+      <ul className="list_bul">{dataLists}</ul>
     </>
   );
 }

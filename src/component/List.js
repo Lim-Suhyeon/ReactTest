@@ -2,8 +2,8 @@ import React from "react";
 import ListItem from "./ListItem";
 
 function List(props) {
-  const names = props.dataList;
-  const dataLists = names.map((data) => (
+  const $li = props.dataList;
+  const dataLists = $li.map((data) => (
     <ListItem name={data.name} date={data.date} label={data.label} />
   ));
 

@@ -5,11 +5,7 @@ function ListItem(props) {
   const labelList = lableBox.map((label,idx) => {
     let $class;
     const $label = label;
-    if($label == '고위험') {
-      $class = 'red';
-    }else {
-      $class = 'green';
-    }
+    if($label == '고위험' ? ($class = 'red') : ($class = 'green'));
     return (<div key={idx} className={$class}>{label}</div>)
   });
 

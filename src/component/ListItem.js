@@ -25,14 +25,15 @@ function ListItem(props) {
     );
   });
 
-  const nameSize = props.name.length;
+  const nameSize = props.name == undefined ? false : true;
+  const textSize = props.text == undefined ? false : true;
 
   return (
     <>
       <li ket={props.idx}>
         <div className="wrap_label">{labelList}</div>
-        { nameSize > 0 ? <div>{props.name},</div> : null }
-        { props.text.length != undefined ? <div>{props.text},</div> : null }
+        { nameSize ? <div>{props.name},</div> : null }
+        { textSize ? <div>{props.text},</div> : null }
         {props.date}
       </li>
     </>

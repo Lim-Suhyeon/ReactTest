@@ -2,7 +2,7 @@ import React from "react";
 
 function ListItem(props) {
   const lableBox = props.label;
-  const labelList = lableBox.map((label, idx) => {
+  const labelList = lableBox.map((label) => {
     let $class;
     switch (label) {
       case "고위험":

@@ -2,7 +2,7 @@ import React from "react";
 
 function ListItem(props) {
   const lableBox = props.label;
-  const labelList = lableBox.map((label) => {
+  const labelList = lableBox.map((label, idx) => {
     let $class;
     switch (label) {
       case "고위험":
@@ -17,6 +17,8 @@ function ListItem(props) {
       default:
         $class = "";
     }
+    
+    console.log($class);
 
     return (
       <div key={$class} className={$class}>

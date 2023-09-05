@@ -2,7 +2,7 @@ import React from "react";
 
 function ListItem(props) {
   const lableBox = props.label;
-  const labelList = lableBox.map((label, idx) => {
+  const labelList = lableBox.map((label) => {
     let $class;
     switch (label) {
       case "고위험":
@@ -15,28 +15,27 @@ function ListItem(props) {
         $class = "green";
         break;
       default:
-        $class = "blue";
+        $class = "";
     }
 
     return (
-      <div key={idx} className={$class}>
+      <div key={$class} className={$class}>
         {label}
       </div>
     );
   });
 
+  const labelSize = props.label == undefined ? false : true;
   const nameSize = props.name == undefined ? false : true;
   const textSize = props.text == undefined ? false : true;
 
   return (
-    <>
-      <li ket={props.idx}>
+      <li key={props.id}>
         <div className="wrap_label">{labelList}</div>
         { nameSize ? <div>{props.name},</div> : null }
         { textSize ? <div>{props.text},</div> : null }
         {props.date}
       </li>
-    </>
   );
 }
 

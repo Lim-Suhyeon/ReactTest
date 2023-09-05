@@ -3,8 +3,8 @@ import ListItem from "./ListItem";
 
 function List(props) {
   const $li = props.dataList;
-  const dataLists = $li.map((data,idx) => (
-    <ListItem {...data} />
+  const dataLists = $li.map((data) => (
+    <ListItem key={data.id} {...data} />
   ));
 
   return (

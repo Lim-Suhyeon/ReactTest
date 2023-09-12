@@ -5,7 +5,7 @@ import ButtonGuide from "./guide/ButtonGuide";
 import InputGuide from "./guide/InputGuide";
 import AccordionGuide from "./guide/AccordionGuide";
 import ListGuide from "./guide/ListGuide";
-import PopupGuide from "./guide/PopupGuide";
+import ModalGuide from "./guide/ModalGuide";
 import SwiperGuide from "./guide/SwiperGuide";
 
 const GlobalStyle = createGlobalStyle`
@@ -24,7 +24,7 @@ export default function App() {
       <InputGuide />
       <AccordionGuide />
       <ListGuide />
-      <PopupGuide />
+      <ModalGuide />
       <SwiperGuide />
     </div>
   );

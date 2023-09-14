@@ -85,16 +85,21 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .3);
-  animation: modaldown 0.5s linear; 
 }
 
-@keyframes modaldown {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.wrap_modal-enter {
+  opacity: 0;
+}
+.wrap_modal-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.wrap_modal-exit {
+  opacity: 1;
+}
+.wrap_modal-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
 
 .cont_modal {

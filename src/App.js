@@ -1,5 +1,5 @@
 import "./styles.css";
-import { createGlobalStyle } from "styled-components";
+//import { createGlobalStyle } from "styled-components";
 import TopHeader from "./layout/TopHeader";
 import ButtonGuide from "./guide/ButtonGuide";
 import InputGuide from "./guide/InputGuide";
